@@ -6,7 +6,7 @@ using UnityEngine.Events;
 public class Analyzer : MonoBehaviour
 {
     AudioSource source;
-    public UnityEvent<float>onVolumeChanged;
+    public static UnityEvent<float>onVolumeChanged = new();
     // Start is called before the first frame update
     void Start()
     {
